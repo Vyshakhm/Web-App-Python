@@ -1,6 +1,6 @@
 FROM python3.9-slim
 WORKDIR /app
-COPY requirement.txt
+COPY requirement.txt .
 RUN pip install --no-cache-dir -r requirement.txt
 COPY ..
 EXPOSE 5000
